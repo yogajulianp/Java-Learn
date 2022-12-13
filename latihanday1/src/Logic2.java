@@ -22,8 +22,26 @@ public class Logic2 {
                 angka++;
             }
         }
-//        System.out.println(Arrays.toString(silang));
+        System.out.println("Logic2 Soal no1");
         PrintArray.print(silang);
+
+        //ripitasi ke 2 soal 1
+        String[][] silang2 = new String[n][n];
+        // isi array
+
+        for (int i = 0; i < n ; i++){
+            int angka2 = 1;
+            for (int j = 0; j < n ; j++ ){
+                if (i == j) {
+                    silang2[i][j] = String.valueOf(angka2);
+                } else if ( i + j == n-1) {
+                    silang2[i][j] = String.valueOf(angka2);
+                }
+                angka2++;
+            }
+        }
+        System.out.println("Logic2 Soal no1- ulang ke2");
+        PrintArray.print(silang2);
     }
 }
 
