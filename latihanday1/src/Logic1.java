@@ -7,8 +7,10 @@ public class Logic1 {
     soal3(9);
     soal4(9);
     soal5(9);
-        soal9(9);
-        soal10(10);
+    soal7(9);
+    soal8(9);
+    soal9(9);
+    soal10(10);
     }
 
     public static void soal1(int n) {
@@ -260,6 +262,49 @@ public class Logic1 {
 
             }
         }
+    }
+
+    public static void soal7(int n) {
+        String[] alfabet = new String[n];
+        char karakter = 'A';
+        for (int i = 0 ; i< alfabet.length; i++) {
+            alfabet[i] = String.valueOf(karakter);
+            karakter++;
+        }
+        System.out.println("Hasil no 7: " + Arrays.toString(alfabet));
+    }
+
+    public static void soal8(int n) {
+        String[] tampung = new String[n];
+        char huruf = 'A';
+        int angka = 2;
+        //isi array
+        for (int i = 0; i < n; i++ ){
+            // genap dulu
+            if(i % 2 == 0) {
+                tampung[i] = String.valueOf(huruf);
+            } else {
+                tampung[i] = String.valueOf(angka);
+                angka += 2;
+            }
+            huruf++;
+        }
+        System.out.println("Hasil soal no 8 : "+ Arrays.toString(tampung));
+
+        //repitasi ke 2 soal 8
+        String[] tampung2 = new String[n];
+        char huruf2 = 'A';
+        int number = 2;
+        for (int j = 0; j < tampung2.length; j++) {
+            if (j % 2 == 0) {
+                tampung2[j] = String.valueOf(huruf2);
+            } else {
+                tampung2[j] = String.valueOf(number);
+                number += 2;
+            }
+            huruf2++;
+        }
+        System.out.println("Hasil soal no 8 : "+ Arrays.toString(tampung2));
     }
 
     public static void soal9(int n) {

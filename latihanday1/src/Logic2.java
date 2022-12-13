@@ -10,17 +10,20 @@ public class Logic2 {
         String[][] silang = new String[n][n];
         //baris = i
         //kolom = j
-
         for (int i = 0 ; i < n; i++){
             int angka = 1;
             //kolom
             for(int j = 0; j < n; j++) {
                 if(i==j){
                     silang[i][j] = String.valueOf(angka);
+                }else if(i+j == n-1) {
+                    silang[i][j] = String.valueOf(angka);
                 }
+                angka++;
             }
         }
-        System.out.println(Arrays.toString(silang));
+//        System.out.println(Arrays.toString(silang));
+        PrintArray.print(silang);
     }
 }
 
