@@ -1,7 +1,6 @@
 public class Person {
     // List of properties
     public Integer id;
-
     public String name;
     public String gender;
     public String address;
@@ -13,7 +12,19 @@ public class Person {
         System.out.println("I am "+ age+ " years old");
 
     }
-//
+
+    public Person() {
+    }
+
+    public Person(Integer id, String name, String gender, String address, int age) {
+        this.id = id;
+        this.name = name;
+        this.gender = gender;
+        this.address = address;
+        this.age = age;
+    }
+
+    //
 //    public Integer getId() {
 //        return id;
 //    }

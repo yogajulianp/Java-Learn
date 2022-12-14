@@ -1,4 +1,4 @@
-public class Main {
+public class MainPerson {
     public static void main(String[] args) {
 
         // class - object - instance - constructore
@@ -19,5 +19,12 @@ public class Main {
         person2.sayHello();
 
         Person person3 = new Person();
+        person3.id = 3;
+        person3.name = "Budi";
+        person3.address = "Depok";
+        person3.gender = "laki-laki";
+        person3.age = 45;
+        person3.sayHello();
+
     }
 }

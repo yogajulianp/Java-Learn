@@ -3,10 +3,11 @@ import java.util.Arrays;
 public class Logic2 {
 
     public static void main(String[] args) {
-        soal1(9);
+//        logic2soal1(9);
+        logic2soal9(9);
     }
 
-    public static void soal1(int n) {
+    public static void logic2soal1(int n) {
         String[][] silang = new String[n][n];
         //baris = i
         //kolom = j
@@ -42,6 +43,28 @@ public class Logic2 {
         }
         System.out.println("Logic2 Soal no1- ulang ke2");
         PrintArray.print(silang2);
+
+        //repitisi ke 3 soal 1, logic 2
+//        String[][] silang3 = new String[n][n];
+        //isi array
+//        for (int i = )
+    }
+
+    public static void logic2soal9(int n) {
+        String[][] ketupat = new String[n][n];
+        //isi array
+        int nilaiTengah = n/2;
+        for (int i = 0; i< n; i++) {
+            for (int j = 0 ; j < n ; j++){
+                if (    i+j >= nilaiTengah
+                        && j-i <= nilaiTengah
+                        && i-j <= nilaiTengah
+                        && i+j <= nilaiTengah + n -1 ) {
+                    ketupat[i][j]= String.valueOf(1);
+                }
+            }
+        }
+        PrintArray.print(ketupat);
     }
 }
 
