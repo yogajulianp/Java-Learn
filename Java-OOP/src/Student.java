@@ -8,5 +8,11 @@ public class Student extends Person{
         this.major = major;
         this.studentId = studentId;
     }
+
+    @Override
+    public void sayHello() {
+        System.out.println("Hello ,I am student");
+        System.out.println("I am "+ this.age+ " years old");
+    }
 }
 

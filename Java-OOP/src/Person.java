@@ -10,7 +10,6 @@ public class Person {
     public void sayHello() {
         System.out.println("Hello , my name is "+ name +", I live at "+ address);
         System.out.println("I am "+ age+ " years old");
-
     }
 
     public Person() {
