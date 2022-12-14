@@ -8,8 +8,5 @@ public class Student extends Person{
         this.major = major;
         this.studentId = studentId;
     }
-
-
-
 }
 
