@@ -33,6 +33,7 @@ public class BasicLogika {
         for (int i = 0; i < n ; i++ ) {
             System.out.print(array[0][i]+"\t\t");
         }
+        System.out.println("\n");
     }
 
 

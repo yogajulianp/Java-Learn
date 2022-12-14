@@ -1,6 +1,8 @@
-package Logic;
+package Logic.logic02;
 
-public class Logic02Soal02 extends BasicLogika{
+import Logic.BasicLogika;
+
+public class Logic02Soal02 extends BasicLogika {
     public Logic02Soal02(int n) {
         super(n);
     }
