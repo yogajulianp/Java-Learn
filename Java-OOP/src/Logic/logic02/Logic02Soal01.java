@@ -21,6 +21,7 @@ public class Logic02Soal01 extends BasicLogika {
     }
 
     public void cetakArray() {
+        System.out.println("hasil logic 02-soal 01 :");
         this.isiArray();
         this.print();
     }

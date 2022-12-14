@@ -12,14 +12,14 @@ public class Logic01Soal02 extends BasicLogika {
 
         for (int i = 0; i < this.n; i++ ){
             if (i == 0) {
-                this.array[0][i]= String.valueOf(angka);
+                this.array[0][i]= String.valueOf(1);
             } else if (i == 1) {
                 this.array[0][i] = String.valueOf(3);
             } else {
                 if (i % 2 == 1) {
-                    this.array[0][i] = this.array[0][i-2] + 3;
+                    this.array[0][i] = String.valueOf(Integer.parseInt(this.array[0][i-2]) + 3);
                 } else {
-                    this.array[0][i] = this.array[0][i-2] + 1;
+                    this.array[0][i] = String.valueOf(Integer.parseInt(this.array[0][i-2]) + 1);
                 }
             }
 
