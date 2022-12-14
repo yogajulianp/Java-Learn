@@ -14,5 +14,18 @@ public class Student extends Person{
         System.out.println("Hello ,I am student");
         System.out.println("I am "+ this.age+ " years old");
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "major='" + major + '\'' +
+                ", studentId=" + studentId +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", address='" + address + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
 
